@@ -1,0 +1,10 @@
+<button #checkbox> Carregar componente de checkbox</button>
+
+
+@defer(on interaction(checkbox)) {
+<app-checkbox></app-checkbox>
+} @placeholder() {
+<h2>Aguardando checkbox com Lazy Loading .... </h2>
+} @loading {
+<h2> Loading .... </h2>
+}
